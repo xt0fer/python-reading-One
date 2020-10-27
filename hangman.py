@@ -35,10 +35,10 @@ while turns > 0:
     # see if the character is in the players guess
         if char in guesses:    
         # print then out the character
-            print(char, end = '') 
+            print(char, end = ' ') 
         else:
         # if not found, print a dash
-            print("_", end = '') 
+            print("_", end = ' ') 
         # and increase the failed counter with one
             failed += 1    
 
@@ -53,7 +53,7 @@ while turns > 0:
     print("")
 
     # ask the user go guess a character
-    guess = input("guess a character:") 
+    guess = input("guess a character: ") 
 
     # set the players guess to guesses
     guesses += guess                    
