@@ -2,7 +2,8 @@
 import random
 import sys
 
-number_dice = 1
+#print('Number of arguments:', len(sys.argv), 'arguments.')
+#print('Argument List:', str(sys.argv))
 
 def roll_once(min, max):
     return random.randint(min, max)
@@ -16,9 +17,6 @@ def do_loop(number_dice):
             print(roll_once(1,6))
 
         roll_again = input("Roll the dices again?")
-
-# print('Number of arguments:', len(sys.argv), 'arguments.')
-# print('Argument List:', str(sys.argv))
 
 def get_argument():
     if (len(sys.argv) == 1):
